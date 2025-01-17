@@ -16,7 +16,7 @@ def extract_name_safe(email):
 data[['firstname', 'lastname']] = data['emails'].apply(lambda x: pd.Series(extract_name_safe(x)))
 
 # Save the updated dataset to a new CSV file
-updated_file_path = 'updated_emails_with_names.csv'
+updated_file_path = 'updated_emails_with_name.csv'
 data.to_csv(updated_file_path, index=False)
 
 print(f"Updated file saved as {updated_file_path}")
