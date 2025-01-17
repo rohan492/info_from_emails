@@ -1,3 +1,4 @@
 venv
 my_file.csv
 updated_emails_with_name.csv
+.DS_Store
